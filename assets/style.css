@@ -5,7 +5,7 @@
 body {
     background-color: rgb(214, 202, 202);
     margin: 0;
-    font-family: 'Times New Roman', Times, serif
+    font-family: sans-serif
 }
 
 header {
@@ -45,21 +45,28 @@ a {
 
 main {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
 section {
     display: flex;
-    border: 5px dashed darkblue;
-    margin: 0, auto;
+    flex: auto;
+    margin: 0 auto;
     justify-content: column;
 }
+section img {
+    display: block;
+    margin: auto;
+}
 
-.category {
-    align-items:center;
+section .category {
+    width: 300px;
     text-align: center;
-    font-size: 36px;
+}
+
+section .content {
+    display: flex;
 }
 
 .profile-pic {
@@ -70,56 +77,59 @@ section {
 section p {
     text-align: right;
     font-size: 24px;
-    border: 5px solid yellow;
 }
 
-.card-lake {
-    background-image: url(./images/mountain-lake.jpeg) ;
+.card {
     background-size: cover;
     height: 250px;
     width: 250px;
-    border-style: solid;
-    border-width: 1px;
-    
-  }
-  .card-prework {
-    background-image: url(./images/pacific-ocean.jpeg);
-    background-size: cover;
-    height: 250px;
-    width: 250px;
+}
 
-  }
-  .card-mini {
-    background-image: url(./images/nyc-image.jpeg);
-    background-size: cover;
-    height: 250px;
-    width: 250px;
-  }
-  .card a img {
-    display:block;
+.content a:hover {
+    filter: grayscale();
+}
+
+.lake {
+    background-image: url("./images/mountain-lake.jpeg");
+}
+
+.prework {
+    background-image: url("./images/pacific-ocean.jpeg");
+}
+
+.mini {
+    background-image: url("./images/nyc-image.jpeg");
+}
+
+.card a img {
+    display: block;
     width: 100%;
     height: 100%;
     list-style-type: none;
     object-position: center;
 
-  }
-  .card h3{
+}
+
+.card h3 {
     font-size: 18px;
     color: white;
-  }
-  .card:hover h3 {
-    opacity: 1;
-  }
-  
+}
+
+.lake
+
 
 section ul {
     display: flex;
-    align-items:center;
+    align-items: center;
     list-style-type: none;
     font-size: 30px;
 
 }
-section ul li{
+
+section ul li {
     margin-left: 60px;
-   
+}
+
+section h2 {
+    width: 300px;
 }
