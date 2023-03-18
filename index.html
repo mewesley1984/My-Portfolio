@@ -14,7 +14,7 @@
         <nav>
             <ul>
                 <li><a href="#about-me">About Me</a></li>
-                <li><a href="my-work">My Work</a></li>
+                <li><a href="#my-work">My Work</a></li>
                 <li><a href="#contact-info">Contact Info</a></li>
                 <li><a href="#resume">Resume</a></li>
             </ul>
@@ -25,7 +25,7 @@
     <main>
         <section>
             <div class="category">
-                <h2>About Me</h2>
+                <h2 id="about-me">About Me</h2>
                 <img src="./assets/images/profile-pic.jpg" class="profile-pic" />
             </div>
             <div class="content">
@@ -35,10 +35,10 @@
             </div>
         </section>
         <section>
-            <div class="category">
-                <h2>My Work</h2>
+            <div class="category work">
+                <h2 id="my-work">My Work</h2>
             </div>
-            <div class="content">
+            <div class="content work">
                 <a href="https://mewesley1984.github.io/Code-Refactor/">
                     <div class="card lake">
                         <h3>Code-Refactor</h3>
@@ -59,11 +59,12 @@
 
         <section>
             <div class="category">
-                <h2>Contact Info</h2>
+                <h2 id="contact-info">Contact Info</h2>
             </div>
             <div class="content">
                 <ul>
-                    <li>Phone: (555)555-5555</li>
+                    <!-- Added ID indicator for phone -->
+                    <li id="phone">Phone: (555) 555-5555</li>
                     <li><a href="https://www.gmail.com">Email</a></li>
                     <li><a href="https://www.twitter.com">Twitter</a></li>
                 </ul>
@@ -71,4 +72,6 @@
         </section>
 
     </main>
+
+<footer>THANK YOU!</footer>
 </body>
