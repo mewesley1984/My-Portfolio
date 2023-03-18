@@ -33,6 +33,7 @@ header nav {
 
 header nav ul {
     display: flex;
+    /* added wrapping */
     flex-wrap: wrap;
     justify-content: flex-end;
     list-style-type: none;
@@ -42,12 +43,15 @@ a {
     color: white;
     text-decoration: none;
     margin-left: 25px;
+    /* increased font on nav selectors */
+    font-size: 24px;
 }
 
 /* Changed main display to flex */
 main {
     display: flex;
     justify-content: center;
+    /* added wrapping */
     flex-wrap: wrap;
 }
 /* Changed section display to flex */
@@ -73,7 +77,7 @@ section .category {
 section .content {
     display: flex;
 }
-
+/* added separate selector for profile pic */
 .profile-pic {
     height: 150px;
     width: 150px;
@@ -95,7 +99,7 @@ section p {
 .content a:hover {
     filter: grayscale();
 }
-
+/* broke out each image into it's own selector.  wrapped div with a attribute and fixed bug */
 .lake {
     background-image: url("./images/mountain-lake.jpeg");
 }
@@ -116,7 +120,7 @@ section p {
     object-position: center;
 
 }
-
+/* increased font size on card headers */
 .card h3 {
     font-size: 24px;
     color: white;
@@ -159,7 +163,7 @@ footer {
     color: white;
 }
 
-
+/* changed max-width from 780 to 860 */
 @media screen and (max-width:860px) {
     section  {
         flex-wrap: wrap;
