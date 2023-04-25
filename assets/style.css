@@ -100,8 +100,8 @@ section p {
     filter: grayscale();
 }
 /* broke out each image into it's own selector.  wrapped div with a attribute and fixed bug */
-.lake {
-    background-image: url("./images/mountain-lake.jpeg");
+.gigpub {
+    background-image: url("./images/gigpub-page.png");
 }
 
 .prework {
