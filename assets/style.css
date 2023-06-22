@@ -100,6 +100,9 @@ section p {
     filter: grayscale();
 }
 /* broke out each image into it's own selector.  wrapped div with a attribute and fixed bug */
+.gigpub2{
+    background-image: url("./images/gigpub-page.png");
+}
 .gigpub {
     background-image: url("./images/gigpub-page.png");
 }
